@@ -1,11 +1,9 @@
 
-# Vagrantfile and Scripts to Automate Kubernetes Setup using Kubeadm [Practice Environemnt for CKA/CKAD and CKS Exams]
+# Vagrantfile and Scripts to Automate Kubernetes Setup using Kubeadm
 
 ## Documentation
 
 Refer this link for documentation: https://devopscube.com/kubernetes-cluster-vagrant/
-
-If you are preparing for CKA, CKAD or CKS exam, save 15% using code **SCOFFER15** at https://kube.promo/latest
 
 ## Prerequisites
 
@@ -18,17 +16,26 @@ To provision the cluster, execute the following commands.
 
 ```shell
 git clone https://github.com/scriptcamp/vagrant-kubeadm-kubernetes.git
+```
+```shell
 cd vagrant-kubeadm-kubernetes
+```
+```shell
 vagrant up
+```
 
 PS: change the IP addr in vagrantfile and master script
-```
+
 
 ## Set Kubeconfig file varaible.
 
 ```shell
 cd vagrant-kubeadm-kubernetes
+```
+```shell
 cd configs
+```
+```shell
 export KUBECONFIG=$(PWD)/config
 ```
 
@@ -50,7 +57,11 @@ Vagrant up will create the admin user token and saves in the configs directory.
 
 ```shell
 cd vagrant-kubeadm-kubernetes
+```
+```shell
 cd configs
+```
+```shell
 cat token
 ```
 
@@ -71,8 +82,3 @@ vagrant up
 ```shell
 vagrant destroy -f
 ```
-
-## Centos & HA based Setup
-
-If you want Centos based setup, please refer https://github.com/marthanda93/VAAS
-  
