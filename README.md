@@ -1,5 +1,5 @@
 
-# Vagrantfile and Scripts to Automate Kubernetes Setup using Kubeadm
+# Vagrantfile and Scripts to Automate Kubernetes Setup using Kubeadm 
 
 ## Documentation
 
@@ -9,6 +9,7 @@ Refer this link for documentation: https://devopscube.com/kubernetes-cluster-vag
 
 1. Working Vagrant setup
 2. 8 Gig + RAM workstation as the Vms use 3 vCPUS and 4+ GB RAM
+3. This is suited for ubuntu-like environments
  
 ## Usage/Examples
 
